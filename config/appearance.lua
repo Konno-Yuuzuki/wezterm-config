@@ -26,7 +26,7 @@ return {
    -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
    window_background_opacity= platform.is_mac and 0.30 or 0,
    win32_system_backdrop = 'Acrylic',
-   macos_window_background_blur = 10,
+   macos_window_background_blur = 20,
 
    -- scrollbar
    enable_scroll_bar = true,
