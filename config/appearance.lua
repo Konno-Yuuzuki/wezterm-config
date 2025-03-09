@@ -1,6 +1,7 @@
 local gpu_adapters = require('utils.gpu-adapter')
-local backdrops = require('utils.backdrops')
 local colors = require('colors.custom')
+local platform = require("utils.platform")
+-- local backdrops = require('utils.backdrops')
 
 return {
    max_fps = 120,
@@ -23,9 +24,9 @@ return {
 
    -- background
    -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
-   window_background_opacity=0.3,
+   window_background_opacity= platform.is_mac and 0.30 or 0,
+   win32_system_backdrop = 'Acrylic',
    macos_window_background_blur = 10,
-   win32_system_backdrop ="Acrylic",
 
    -- scrollbar
    enable_scroll_bar = true,
