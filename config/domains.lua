@@ -4,11 +4,12 @@ return {
    ssh_domains = {
       -- yazi's image preview on Windows will only work if launched via ssh from WSL
       {
-         name = 'wsl.ssh',
-         remote_address = 'localhost',
+         name = 'Ubuntu:Server',
+         remote_address = '192.168.110.143',
          multiplexing = 'None',
-         default_prog = { 'fish', '-l' },
-         assume_shell = 'Posix'
+         default_prog = { 'zsh', '-l' },
+         assume_shell = 'Posix',
+         username = "rtm"
       }
    },
 

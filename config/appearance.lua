@@ -22,7 +22,10 @@ return {
    colors = colors,
 
    -- background
-   background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   window_background_opacity=0.3,
+   macos_window_background_blur = 10,
+   win32_system_backdrop ="Acrylic",
 
    -- scrollbar
    enable_scroll_bar = true,
